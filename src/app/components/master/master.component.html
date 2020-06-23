@@ -1,0 +1,14 @@
+<div>
+  <img class="pokemon-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1280px-International_Pok%C3%A9mon_logo.svg.png" alt="Logo_Pokemon">
+</div>
+<div *ngFor="let pokemon of pokemons" class="container-pokemons" [routerLink]="['/pokemons', pokemon.id]">
+  <div class="card mb-4" style="max-width: 100%;"  >
+    <div class="column no-gutters">
+      <div class="col-md-12">
+        <div class="card-body">
+          <h5 class="card-title">{{pokemon.name | titlecase}}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

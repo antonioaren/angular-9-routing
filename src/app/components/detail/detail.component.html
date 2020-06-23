@@ -1,0 +1,12 @@
+<div class="container card" style="width: 28rem;">
+  <img class="card-img-top" [src]="pokemon.sprites['front_shiny']" alt="Card image cap">
+  <div class="card-body">
+    <h1>Nombre: {{pokemon.name | titlecase}}</h1>
+    <p class="card-text">Peso: {{pokemon.weight}}Kg</p>
+    <p class="card-text">Número en la pokedex: #{{pokemon.order}}</p>
+    <small><u>De tipo:</u></small>
+    <ul>
+      <li *ngFor="let t of pokemon.types">{{t.type.name | titlecase}}</li>
+    </ul>
+  </div>
+</div>

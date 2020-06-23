@@ -1,0 +1,10 @@
+.container-pokemons {
+  width: 100%;
+}
+
+.pokemon-logo {
+  vertical-align: middle;
+    border-style: none;
+    max-width: 99.9%;
+    margin-bottom: 40px;
+}
